@@ -46,7 +46,7 @@ SCORM files you can simply require the 'scorm/package' file.
       pkg.manifest.resources.each do |resource|
         puts resource.href
         puts resource.scorm_type
-        if pkg.exists?(resource.files.first)
+        if pkg.exist?(resource.files.first)
           puts resource.files.first
           puts pkg.file(resource.files.first)
         end
